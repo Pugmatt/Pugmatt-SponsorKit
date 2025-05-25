@@ -17,8 +17,8 @@ export default defineConfig({
   },
   tiers: [
     {
-      title: 'All Sponsors',
-      monthlyDollars: 1
+      title: 'All Sponsors'.
+       preset: tierPresets.small,
     },
     {
       title: 'Silver Sponsors',
