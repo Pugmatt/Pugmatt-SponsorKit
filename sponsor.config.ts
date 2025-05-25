@@ -12,48 +12,28 @@ const past: BadgePreset = {
 }
 
 export default defineConfig({
+  onSponsorsReady: function(sponsors) {
+    console.log(sponsors);
+  },
   tiers: [
     {
-      title: 'Past Sponsors',
-      monthlyDollars: -1,
-      preset: past,
-    },
-    {
-      title: 'Backers',
-      preset: tierPresets.small,
-    },
-    {
-      title: 'Sponsors',
-      monthlyDollars: 10,
-      preset: {
-        avatar: {
-          size: 42,
-        },
-        boxWidth: 52,
-        boxHeight: 52,
-        container: {
-          sidePadding: 30,
-        },
-      }
+      title: 'All Sponsors',
+      monthlyDollars: 1
     },
     {
       title: 'Silver Sponsors',
-      monthlyDollars: 50,
+      monthlyDollars: 5,
       preset: tierPresets.medium,
     },
     {
       title: 'Gold Sponsors',
-      monthlyDollars: 100,
+      monthlyDollars: 15,
       preset: tierPresets.large,
     },
     {
-      title: 'Platinum Sponsors',
-      monthlyDollars: 500,
+      title: 'Diamond Sponsor',
+      monthlyDollars: 50,
       preset: tierPresets.xl,
-    },
-    {
-      title: 'Special Sponsor',
-      monthlyDollars: Infinity,
-    },
+    }
   ]
 })
