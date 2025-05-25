@@ -17,7 +17,7 @@ export default defineConfig({
   },
   tiers: [
     {
-      title: 'All Sponsors'.
+      title: 'All Sponsors',
        preset: tierPresets.small,
     },
     {
