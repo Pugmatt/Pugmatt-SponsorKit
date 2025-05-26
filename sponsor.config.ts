@@ -13,7 +13,6 @@ const past: BadgePreset = {
 
 export default defineConfig({
   onSponsorsFetched: function(sponsors, provider) {
-    console.log(sponsors, provider);
     for (let i = 0; i < 750; i++) {
        sponsors.push({
        sponsor: {
@@ -38,6 +37,7 @@ export default defineConfig({
     }
   return sponsors;
   },
+  sponsorsAutoMerge: true,
   tiers: [
     {
       title: 'Sponsors',
@@ -54,7 +54,7 @@ export default defineConfig({
       preset: tierPresets.medium,
     },
     {
-      title: 'Diamond Sponsor',
+      title: 'Diamond Sponsors',
       monthlyDollars: 50,
       preset: tierPresets.large,
     }
