@@ -24,7 +24,7 @@ export default defineConfig({
       monthlyDollars: 5,
       privacyLevel: 'PUBLIC',
       tierName: "silver",
-      createdAt: "2025-05-25T23:56:02.093Z"
+      createdAt: "2025-05-25T23:56:02.093Z",
       expireAt: "2025-05-26T23:56:02.093Z",
       isOneTime: false,
       provider: "github",
