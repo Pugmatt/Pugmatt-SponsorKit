@@ -27,7 +27,6 @@ export default defineConfig({
     }
   return sponsors;
   },
-  render: 'circles',
   tiers: [
     {
       title: 'Sponsors',
@@ -48,25 +47,5 @@ export default defineConfig({
       monthlyDollars: 50,
       preset: tierPresets.large,
     }
-  ],
-  renders: [
-    {
-      name: 'sponsors',
-      renderer: 'tiers',
-      width: 800,
-      formats: ['svg', 'png'],
-    },
-    {
-      name: 'sponsors-wide',
-      width: 1000,
-      renderer: 'tiers',
-      formats: ['svg'],
-    },
-    {
-      renderer: 'circles',
-      name: 'sponsors-circles',
-      width: 1000,
-      includePastSponsors: true,
-    },
   ],
 })
