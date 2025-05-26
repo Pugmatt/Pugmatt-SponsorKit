@@ -28,7 +28,7 @@ export default defineConfig({
       expireAt: "2025-05-26T23:56:02.093Z",
       isOneTime: false,
       provider: "github",
-    });
+    }));
   return sponsors;
   },
   tiers: [
