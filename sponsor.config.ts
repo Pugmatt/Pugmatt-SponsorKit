@@ -25,7 +25,7 @@ export default defineConfig({
          monthlyDollars: Math.floor(Math.random()*17)
       });
     }
-    for (let i = 750; i < 850; i++) {
+    for (let i = 750; i < 760; i++) {
        sponsors.push({
        sponsor: {
           type: 'User',
@@ -33,7 +33,7 @@ export default defineConfig({
           name: "Test Name" + i,
           avatarUrl: "https://picsum.photos/200"
        },
-         monthlyDollars: Math.floor(Math.random()*50)
+         monthlyDollars: 50+Math.floor(Math.random()*8)
       });
     }
   return sponsors;
