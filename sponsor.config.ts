@@ -53,16 +53,6 @@ export default defineConfig({
       renderer: 'circles',
       name: 'sponsors-circles',
       width: 1000
-    },
-    {
-      name: 'sponsors',
-      width: 800,
-      formats: ['svg', 'png'],
-    },
-    {
-      name: 'sponsors-wide',
-      width: 1000,
-      formats: ['svg'],
-    },
+    }
   ],
 })
