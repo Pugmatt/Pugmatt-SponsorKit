@@ -12,8 +12,8 @@ const past: BadgePreset = {
 }
 
 export default defineConfig({
-  onSponsorsReady: function(sponsors) {
-    console.log(sponsors);
+  onSponsorsFetched: function(sponsors, provider) {
+    console.log(sponsors, provider);
     sponsors.push({
       sponsor: {
           type: 'User',
