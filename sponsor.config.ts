@@ -51,12 +51,14 @@ export default defineConfig({
   renders: [
     {
       name: 'sponsors',
+      renderer: 'tiers',
       width: 800,
       formats: ['svg', 'png'],
     },
     {
       name: 'sponsors-wide',
       width: 1000,
+      renderer: 'tiers',
       formats: ['svg'],
     },
     {
