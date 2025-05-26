@@ -25,7 +25,7 @@ export default defineConfig({
          monthlyDollars: Math.floor(Math.random()*17)
       });
     }
-    for (let i = 0; i < 100; i++) {
+    for (let i = 750; i < 850; i++) {
        sponsors.push({
        sponsor: {
           type: 'User',
