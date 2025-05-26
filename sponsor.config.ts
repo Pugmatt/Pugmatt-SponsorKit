@@ -30,7 +30,7 @@ export default defineConfig({
   tiers: [
     {
       title: 'All Sponsors',
-      preset: tierPresets.small,
+      preset: tierPresets.base,
     },
     {
       title: 'Silver Sponsors',
@@ -49,6 +49,11 @@ export default defineConfig({
     }
   ],
    renders: [
+     {
+      renderer: 'circles',
+      name: 'sponsors-circles',
+      width: 1000
+    },
     {
       name: 'sponsors',
       width: 800,
@@ -58,11 +63,6 @@ export default defineConfig({
       name: 'sponsors-wide',
       width: 1000,
       formats: ['svg'],
-    },
-    {
-      renderer: 'circles',
-      name: 'sponsors-circles',
-      width: 1000
     },
   ],
 })
