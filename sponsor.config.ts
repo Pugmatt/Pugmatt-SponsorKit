@@ -21,13 +21,7 @@ export default defineConfig({
           name: "test",
           avatarUrl: "https://avatars.githubusercontent.com/u/6006328?s=400&u=6efb43b9edded80df36f732e2e34dc469b3fdfc7&v=4"
       },
-      monthlyDollars: 5,
-      privacyLevel: 'PUBLIC',
-      tierName: "silver",
-      createdAt: "2025-05-25T23:56:02.093Z",
-      expireAt: "2025-05-26T23:56:02.093Z",
-      isOneTime: false,
-      provider: "github",
+      monthlyDollars: 5
     });
   return sponsors;
   },
