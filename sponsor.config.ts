@@ -14,7 +14,7 @@ const past: BadgePreset = {
 export default defineConfig({
   onSponsorsFetched: function(sponsors, provider) {
     console.log(sponsors, provider);
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 750; i++) {
        sponsors.push({
        sponsor: {
           type: 'User',
@@ -22,7 +22,18 @@ export default defineConfig({
           name: "Test Name" + i,
           avatarUrl: "https://picsum.photos/200"
        },
-         monthlyDollars: Math.floor(Math.random()*55)
+         monthlyDollars: Math.floor(Math.random()*17)
+      });
+    }
+    for (let i = 750; i < 760; i++) {
+       sponsors.push({
+       sponsor: {
+          type: 'User',
+          login: "testlogin" + i,
+          name: "Test Name" + i,
+          avatarUrl: "https://picsum.photos/200"
+       },
+         monthlyDollars: 50+Math.floor(Math.random()*8)
       });
     }
   return sponsors;
@@ -44,7 +55,7 @@ export default defineConfig({
       preset: tierPresets.medium,
     },
     {
-      title: 'Diamond Sponsor',
+      title: 'Diamond Sponsors',
       monthlyDollars: 50,
       preset: tierPresets.large,
     }
