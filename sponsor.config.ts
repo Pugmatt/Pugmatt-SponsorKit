@@ -27,6 +27,7 @@ export default defineConfig({
     }
   return sponsors;
   },
+  render: 'circle',
   tiers: [
     {
       title: 'Sponsors',
