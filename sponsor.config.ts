@@ -30,22 +30,39 @@ export default defineConfig({
   tiers: [
     {
       title: 'All Sponsors',
-       preset: tierPresets.small,
+      preset: tierPresets.small,
     },
     {
       title: 'Silver Sponsors',
       monthlyDollars: 5,
-      preset: tierPresets.medium,
+      preset: tierPresets.small,
     },
     {
       title: 'Gold Sponsors',
       monthlyDollars: 15,
-      preset: tierPresets.large,
+      preset: tierPresets.medium,
     },
     {
       title: 'Diamond Sponsor',
       monthlyDollars: 50,
       preset: tierPresets.xl,
     }
-  ]
+  ],
+   renders: [
+    {
+      name: 'sponsors',
+      width: 800,
+      formats: ['svg', 'png'],
+    },
+    {
+      name: 'sponsors-wide',
+      width: 1000,
+      formats: ['svg'],
+    },
+    {
+      renderer: 'circles',
+      name: 'sponsors-circles',
+      width: 1000
+    },
+  ],
 })
