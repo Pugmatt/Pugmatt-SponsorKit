@@ -38,6 +38,7 @@ export default defineConfig({
     }
   return sponsors;
   },
+  sponsorsAutoMerge: true,
   renderer: "circles",
   tiers: [
     {
