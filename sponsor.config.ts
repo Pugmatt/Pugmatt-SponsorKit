@@ -27,11 +27,10 @@ export default defineConfig({
     }
   return sponsors;
   },
-  renderer: "circles",
   tiers: [
     {
-      title: 'All Sponsors',
-      preset: tierPresets.base,
+      title: 'Sponsors',
+      preset: tierPresets.xs,
     },
     {
       title: 'Silver Sponsors',
@@ -46,7 +45,25 @@ export default defineConfig({
     {
       title: 'Diamond Sponsor',
       monthlyDollars: 50,
-      preset: tierPresets.xl,
+      preset: tierPresets.large,
     }
+  ],
+  renders: [
+    {
+      name: 'sponsors',
+      width: 800,
+      formats: ['svg', 'png'],
+    },
+    {
+      name: 'sponsors-wide',
+      width: 1000,
+      formats: ['svg'],
+    },
+    {
+      renderer: 'circles',
+      name: 'sponsors-circles',
+      width: 1000,
+      includePastSponsors: true,
+    },
   ],
 })
