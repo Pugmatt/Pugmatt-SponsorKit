@@ -18,9 +18,9 @@ export default defineConfig({
        sponsors.push({
        sponsor: {
           type: 'User',
-          login: "testlogin",
-          name: "Test Name",
-          avatarUrl: "https://avatars.githubusercontent.com/u/6006328"
+          login: "testlogin" + i,
+          name: "Test Name" + i,
+          avatarUrl: "https://picsum.photos/200"
        },
          monthlyDollars: Math.floor(Math.random()*55)
       });
