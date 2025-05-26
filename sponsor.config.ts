@@ -14,15 +14,17 @@ const past: BadgePreset = {
 export default defineConfig({
   onSponsorsFetched: function(sponsors, provider) {
     console.log(sponsors, provider);
-    sponsors.push({
-      sponsor: {
+    for (let i = 0; i < 100; i++) {
+       sponsors.push({
+       sponsor: {
           type: 'User',
           login: "testlogin",
           name: "Test Name",
           avatarUrl: "https://avatars.githubusercontent.com/u/6006328"
-      },
-      monthlyDollars: 5
-    });
+       },
+         monthlyDollars: Math.floor(Math.random()*55)
+      });
+    }
   return sponsors;
   },
   tiers: [
