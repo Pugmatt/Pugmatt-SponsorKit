@@ -12,21 +12,6 @@ const past: BadgePreset = {
 }
 
 export default defineConfig({
-  onSponsorsFetched: function(sponsors, provider) {
-    console.log(sponsors, provider);
-    for (let i = 0; i < 100; i++) {
-       sponsors.push({
-       sponsor: {
-          type: 'User',
-          login: "testlogin" + i,
-          name: "Test Name" + i,
-          avatarUrl: "https://picsum.photos/200"
-       },
-         monthlyDollars: Math.floor(Math.random()*55)
-      });
-    }
-  return sponsors;
-  },
   tiers: [
     {
       title: 'All Sponsors',
