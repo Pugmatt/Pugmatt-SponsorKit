@@ -21,17 +21,17 @@ export default defineConfig({
     {
       title: 'Silver Sponsors',
       monthlyDollars: 5,
-      preset: tierPresets.base,
+      preset: tierPresets.medium,
     },
     {
       title: 'Gold Sponsors',
       monthlyDollars: 15,
-      preset: tierPresets.medium,
+      preset: tierPresets.large,
     },
     {
       title: 'Diamond Sponsors',
       monthlyDollars: 50,
-      preset: tierPresets.large,
+      preset: tierPresets.xl,
     }
   ],
 })
