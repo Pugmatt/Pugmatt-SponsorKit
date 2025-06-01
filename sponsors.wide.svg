@@ -16,7 +16,6 @@ text {
 }
 </style>
 <text x="900" y="40" text-anchor="middle" class="sponsorkit-tier-title">Silver Sponsors</text><a href="https://www.patreon.com/user?u=72308691" class="sponsorkit-link" target="_blank" id="likearaptor">
-  <text x="900" y="133" text-anchor="middle" class="sponsorkit-name" fill="currentColor">likeara...</text>
   
   <clipPath id="c546168">
     <rect x="875" y="65" width="50" height="50" rx="25" ry="25" />
