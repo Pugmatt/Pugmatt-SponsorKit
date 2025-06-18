@@ -14,6 +14,7 @@ const past: BadgePreset = {
 export default defineConfig({
   sponsorsAutoMerge: true,
   renderer: "circles",
+  width: 120,
   tiers: [
     {
       title: 'Sponsors',
