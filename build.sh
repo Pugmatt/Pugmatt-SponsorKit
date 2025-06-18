@@ -1,1 +1,1 @@
-npx sponsorkit --dir=. -w=200
+npx sponsorkit --dir=. -w=250
