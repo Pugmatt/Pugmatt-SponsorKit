@@ -38,12 +38,12 @@ export default defineConfig({
     },
     {
       title: 'Gold Sponsors',
-      monthlyDollars: 15,
+      monthlyDollars: 10,
       preset: tierPresets.large,
     },
     {
       title: 'Diamond Sponsors',
-      monthlyDollars: 50,
+      monthlyDollars: 25,
       preset: tierPresets.xl,
     }
   ],
