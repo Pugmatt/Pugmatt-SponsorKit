@@ -9,6 +9,9 @@ const past: BadgePreset = {
   container: {
     sidePadding: 35,
   },
+  name: {
+    color: "#d1b000"
+  }
 }
 
 const silver: BadgePreset = {
