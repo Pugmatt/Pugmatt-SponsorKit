@@ -10,7 +10,7 @@ const past: BadgePreset = {
     sidePadding: 35,
   },
   name: {
-    color: "#d1b000"
+    color: "#d1b001"
   }
 }
 
